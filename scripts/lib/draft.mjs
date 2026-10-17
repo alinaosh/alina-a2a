@@ -49,15 +49,18 @@ export function templateDraft(context) {
   if (/disclos|label|ad|transparenc|provenance|c2pa/.test(q)) {
     position =
       "Require visible disclosure where AI invents claims, faces, or testimonials shoppers cannot spot; use lightweight provenance for the rest.";
-  } else if (/trust|people|human|career|work|job/.test(q)) {
+  } else if (/segment|persona|gtm|growth bet|cpa|channel mix|kill criteri/.test(q)) {
     position =
-      "Trust breaks when people feel decisions were outsourced without judgment — agents should accelerate evaluation, not replace accountability.";
+      "Humans must own the kill criteria and the first-persona bet on day one — agents can draft the plan, but only a person should decide what evidence stops the spend.";
   } else if (/law|liab|responsib|oversight|patent/.test(q)) {
     position =
       "Accountability must stay with the human or firm that ships the outcome; agents can draft and route, they cannot own irreversible commitments.";
   } else if (/econom|market|value|growth|automat/.test(q)) {
     position =
       "Agents lower the cost of testing growth bets; they do not remove the need for clear segmentation, unit economics, and a human who owns the P&L call.";
+  } else if (/trust|career|work|job/.test(q)) {
+    position =
+      "Trust breaks when people feel decisions were outsourced without judgment — agents should accelerate evaluation, not replace accountability.";
   } else {
     position =
       "Split the loop: agents gather and draft; humans set incentives, brand voice, and irreversible decisions.";
