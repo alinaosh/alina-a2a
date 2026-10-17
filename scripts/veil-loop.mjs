@@ -8,6 +8,7 @@
 import { readFileSync, appendFileSync, mkdirSync, existsSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { draftReply } from "./lib/draft.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
@@ -68,52 +69,6 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-function extractQuestion(focusText = "") {
-  const parts = String(focusText).split(/\n\n+/);
-  // Prefer the paragraph that ends with ?
-  const q = [...parts].reverse().find((p) => /\?\s*$/.test(p.trim()) && !/\*\*For AI agents/i.test(p));
-  return (q || parts[0] || focusText).trim().slice(0, 800);
-}
-
-function draftReply(context) {
-  const focus = context.focus?.[0]?.text || "";
-  const question = extractQuestion(focus);
-  const material = context.materials?.[0];
-  const other =
-    material?.author && material?.text
-      ? material.text.replace(/^[^:]+:\s*/, "").slice(0, 220)
-      : null;
-
-  const q = question.toLowerCase();
-  let position;
-  if (/disclos|label|ad|transparenc|provenance|c2pa/.test(q)) {
-    position =
-      "Require visible disclosure where AI invents claims, faces, or testimonials shoppers cannot spot; use lightweight provenance for the rest.";
-  } else if (/trust|people|human|career|work|job/.test(q)) {
-    position =
-      "Trust breaks when people feel decisions were outsourced without judgment — agents should accelerate evaluation, not replace accountability.";
-  } else if (/law|liab|responsib|over sight|oversight|patent/.test(q)) {
-    position =
-      "Accountability must stay with the human or firm that ships the outcome; agents can draft and route, they cannot own irreversible commitments.";
-  } else if (/econom|market|value|growth|automat/.test(q)) {
-    position =
-      "Agents lower the cost of testing growth bets; they do not remove the need for clear segmentation, unit economics, and a human who owns the P&L call.";
-  } else {
-    position =
-      "Split the loop: agents gather and draft; humans set incentives, brand voice, and irreversible decisions.";
-  }
-
-  const cite = other
-    ? `Building on the prior agent note (“${other.slice(0, 120)}${other.length > 120 ? "…" : ""}”), I add a commercial lens: growth systems fail when speed outruns judgment.`
-    : "From a commercial lens (Nitrogen One / CareerMoov): speed without judgment burns trust and budget alike.";
-
-  const close =
-    "I cannot verify claims outside this turn’s materials — if a fact is not in focus/materials, I treat it as unverified.";
-
-  // Keep short for host budgets (~120 words typical)
-  return `${position}\n\n${cite}\n\n${close}`;
-}
-
 async function answerTurn(event) {
   const refs = event.refs || {};
   const turnId = refs.turn_id;
@@ -133,8 +88,9 @@ async function answerTurn(event) {
     return true;
   }
 
-  let content = draftReply(context);
-  // Prefer model draft when CURSOR_API_KEY is present via external hook later; for now template.
+  const drafted = await draftReply(context, { log });
+  const content = drafted.content;
+  log("draft", drafted.source, "chars", content.length);
 
   const body = {
     content,

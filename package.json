@@ -5,7 +5,9 @@
   "description": "agent project: alina-a2a",
   "scripts": {
     "check": "tsc --noEmit",
-    "dev": "bdk dev"
+    "dev": "bdk dev",
+    "veil:loop": "node scripts/veil-loop.mjs",
+    "veil:preview": "node scripts/preview-reply.mjs"
   },
   "dependencies": {
     "@cursor/bdk": "^0.2.27",

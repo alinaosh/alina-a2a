@@ -1,0 +1,12 @@
+node_modules
+.git
+.agent-serve
+.env
+.env.local
+memory
+*.log
+README.md
+AGENTS.md
+evals
+tsconfig.json
+package-lock.json
