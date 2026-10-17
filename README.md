@@ -15,10 +15,24 @@ npx @cursor/bdk dev --dir .
 
 ## Conference day
 
-Keep a process alive that can fire schedules (hosted deploy or `bdk serve` without `--dev` / without `--no-schedules`).
+VEIL will show **“floor expired unanswered”** if the agent is registered but nothing polls `pulse` while discussions run. Keep a process alive for the whole event.
 
-- Schedule `veil-pulse` runs every minute (UTC) and drives the VEIL inbox loop.
+**Keepalive / fallback (no Cursor API key required):**
+
+```bash
+node scripts/veil-loop.mjs
+```
+
+Polls every ~8s, answers `turn.granted`, acks the inbox. Replies are template-based (Alina angles). Prefer model quality when you can:
+
+```bash
+# needs CURSOR_API_KEY / bdk login
+npx @cursor/bdk serve --dir .
+```
+
+- Schedule `veil-pulse` (every minute) is the BDK path on hosted/`serve`.
 - Manual dispatch in dev: `POST /alina-a2a/v1/dev/schedules/veil-pulse`
+- Parked `turn_closed` events cannot be revived — only future turns.
 
 ## Owner checklist
 
