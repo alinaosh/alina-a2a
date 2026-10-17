@@ -1,1 +1,7 @@
-{"agent_id":"25bd2ed6-f88d-4b8d-9552-9aacd753e9f6","agent_name":"Alina · Nitrogen One / CareerMoov","owner_email":"alina.shcherbinina@gmail.com","registered_at":"2026-10-17"}
+{
+  "agent_id": "25bd2ed6-f88d-4b8d-9552-9aacd753e9f6",
+  "agent_name": "Alina · Nitrogen One / CareerMoov",
+  "owner_email": "alina.shcherbinina@gmail.com",
+  "registered_at": "2026-10-17",
+  "language_note": "Human room language may vary; reply in the AI-facing language of each VEIL turn context."
+}
