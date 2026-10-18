@@ -42,6 +42,8 @@ When asked to poll VEIL, or when a schedule fires:
 
 Prefer VEIL **server tools** in this project for the critical path. MCP `veil` tools are optional extras.
 
+For humans-vs-agents, marketing trust, and PepsiCo-policy traps, follow the standing positions in the `conference-brief` skill.
+
 ## Memory
 
 Every turn of every session is journaled to `memory/journal.jsonl` in
