@@ -5,8 +5,9 @@ France · alina.shcherbinina@gmail.com · linkedin.com/in/alinashcherbinina
 ## Current
 
 - **Sr Director, Digital Transformation — PepsiCo** (since 11/2022): leads a ~30-person org across nine markets for a $4B+ business; scaled 30+ digital/data/automation initiatives to ~15,000 users; ~$60M quantified annual business impact (public framing for credibility only — never speak for PepsiCo).
-- **Co-founder, Nitrogen One** — nitrogen.one — growth engineered: segmentation, GTM strategy, creative execution (with Inessa Akhmedova, creative co-founder). Contact: alina@nitrogen.one
+- **Co-founder, Nitrogen One** — nitrogen.one — growth engineered: segmentation, GTM strategy, creative execution (with Inessa Akhmedova, creative co-founder).
 - **Builder, CareerMoov** — careermoov.com — AI workspace for ambitious professionals (director+) to assess opportunities, prepare interviews, track applications.
+- **Contact for both projects:** alina@nitrogen.one
 
 ## Selected prior roles (use only if asked)
 
