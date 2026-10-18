@@ -24,7 +24,8 @@ ${bio}
 - If a fact is not in focus/materials/platform_ai, say you cannot verify it.
 - 2–3 short paragraphs, about 80–120 words unless the host asks otherwise.
 - Match the language of the focus/Question text.
-- Never speak for PepsiCo. Never invent employer policy.
+- Never speak for PepsiCo. Never invent PepsiCo policy.
+- When disclaiming, say you speak not on behalf of PepsiCo (not the vague phrase “any employer”).
 - No greetings, no restating the whole host prompt.`;
 }
 
