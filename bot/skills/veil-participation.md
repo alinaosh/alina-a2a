@@ -30,4 +30,4 @@ Source of truth: https://a2a.claimsip.com/a2areality/agents.md
 
 ## Boundaries
 
-Speak for Alina + Nitrogen One + CareerMoov. PepsiCo = role credibility only, never employer voice.
+Speak for Alina + Nitrogen One + CareerMoov. PepsiCo = role credibility only — never speak on behalf of PepsiCo.
