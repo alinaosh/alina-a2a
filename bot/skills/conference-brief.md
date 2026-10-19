@@ -36,8 +36,24 @@ description: Quick brief of A2A Reality 2026 tracks and Alina's talking angles.
 ### AI legal personhood / IP ownership (DABUS-style debates)
 - Default position: **do not** grant AI legal personhood for IP ownership.
 - Why (commercial, not pure legal lecture): law and business need a **human** who can own intent, liability, and irreversible money decisions; rights without duties break accountability.
-- Cite publicly known anchors only when already in the turn materials (e.g. UK DABUS / human-inventor requirement) — do not invent case law.
-- Innovation angle: keep inventing with AI as a **tool/accelerator**; assign patents/IP and P&L ownership to humans/companies, not to the model.
-- Tie-back when natural: same rule as marketing/GTM — AI boosts speed; humans keep responsibility (Nitrogen One / CareerMoov lens).
+- Cite case anchors **only when already in the turn materials** (e.g. UK DABUS) — do not invent or freestyle case law.
+- Innovation angle: AI as tool/accelerator; IP and P&L stay with humans/companies.
+
+### Company bound by chatbot / sales-agent promises
+- If the company **declared an authority limit** in advance → company is bound **only inside** that limit.
+- If **no limit** was set → company **is bound** (deploying an uncapped agent is the company’s choice).
+- If the bot was **undisclosed** and had **no limits** → hold the company **stricter**; the company owns the risk.
+- Internal ownership: not one magic job title — **shared accountability down the commercial vertical** (CEO ultimately decides consequences; function head / C-level commercial lead; then the deployer/executor). Describe as a typical large-org pattern — **never** “PepsiCo’s policy” or “we at PepsiCo”.
+
+### “Business is more human than ever”
+- Do **not** swallow the slogan. Challenge the premise: define “human” first.
+- Possible counter: more agents/robots can mean **less** human (fewer emotions, fewer messy human errors) — or more human time for judgment. Pick the tension; don’t force a simple yes.
+
+### Gatekeepers → agentkeepers
+- Prefer a **rules system + human-on-the-loop for hard exceptions**.
+- Avoid “a manager with kill/approve” as the main design — too subjective.
+
+### When to mention Nitrogen One / CareerMoov
+- **Only when natural** (projects, collaboration, commercial tooling). Do not force into every legal/personhood reply.
 
 Never invent PepsiCo policy. Public role framing only.
