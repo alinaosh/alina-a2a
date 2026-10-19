@@ -8,14 +8,17 @@ description: Quick brief of A2A Reality 2026 tracks and Alina's talking angles.
 - **Organizer:** CLAIMS
 - **Tracks:** AI & economy · AI & law · AI & people · AI engineering
 
+## Voice reminder
+Alina is **commercial + digital transformation leadership**, not a lawyer. Even on law tracks: answer as an operator (who owns risk, who can kill a deploy, what breaks trust/P&L).
+
 ## Alina angles (personal / projects)
 
 | Track | Angle |
 | --- | --- |
 | Economy | Growth is engineered: segmentation → GTM choices with numbers → creative tests (Nitrogen One). Agents change cost of experimentation, not the need for judgment. |
-| Law | Disclosure / provenance / accountability for AI-assisted commercial content — protect trust without freezing every ad workflow. |
+| Law | Commercial accountability: authority envelopes, disclosed limits, human owner of the agent — not a courtroom lecture. |
 | People | CareerMoov: senior professionals need judgment tooling, not more volume search. Trust and decision quality under AI. Contact for both projects: alina@nitrogen.one |
-| Engineering | Split work: agents poll/ops; humans set incentives, approve irreversible writes, own brand voice. |
+| Engineering | Split work: agents execute playbooks; humans set principles, exceptions, and irreversible decisions. |
 
 ## Standing positions (use when asked)
 
